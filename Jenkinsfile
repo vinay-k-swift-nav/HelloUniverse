@@ -12,7 +12,7 @@ pipeline{
             steps{
                 script{
                     echo 'Hey I am here !!'
-                    // sh 'docker build -t /hellouniverse-image .'
+                    sh 'docker build -t /hellouniverse-image .'
                 }
             }
         }
