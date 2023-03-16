@@ -11,5 +11,5 @@ COPY . .
 RUN g++ -o hellouniverse index.cpp
 
 # Set the entrypoint for the container
-ENTRYPOINT ["/hellouniverse"]
+ENTRYPOINT ["/etc/bash"]
 
