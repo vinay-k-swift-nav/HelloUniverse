@@ -12,6 +12,7 @@ pipeline{
             steps{
                 script{
                     echo 'Hey I am here !!'
+                    sh 'sudo mount --bind /media/daten/home/hellouniverse /home/hellouniverse'
                     sh 'docker build -t /hellouniverse-image .'
                 }
             }
