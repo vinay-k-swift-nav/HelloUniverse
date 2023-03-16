@@ -11,7 +11,8 @@ pipeline{
         stage("Build docker image"){
             steps{
                 script{
-                    sh 'docker build -t /hellouniverse-image .'
+                    echo 'Hey I am here !!'
+                    // sh 'docker build -t /hellouniverse-image .'
                 }
             }
         }
