@@ -8,8 +8,8 @@ WORKDIR /
 COPY . .
 
 # Compile the C++ code and generate the executable
-RUN g++ -o hellouniverse index.cpp
+RUN g++ -o hellouniverse /app/index.cpp
 
 # Set the entrypoint for the container
-ENTRYPOINT ["/etc/bash"]
+ENTRYPOINT ["/hellouniverse/app"]
 
