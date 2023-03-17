@@ -2,7 +2,7 @@
 FROM gcc:latest
 
 # Set the working directory inside the container
-WORKDIR /
+WORKDIR /home/hellouniverse
 
 # Copy the C++ source code into the container
 COPY . .
