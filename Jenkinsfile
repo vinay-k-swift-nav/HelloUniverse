@@ -13,7 +13,7 @@ pipeline{
                 script{
                     echo 'Hey I am here !!'
         //             sh 'mount --bind /media/daten/home/hellouniverse /home/hellouniverse'
-        //             sh 'docker build -t hellouniverse-image.'
+                    sh 'docker build -t hellouniverse-image .'
                 }
             }
         }
