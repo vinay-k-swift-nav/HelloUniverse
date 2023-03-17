@@ -1,6 +1,9 @@
 # Use a base image with C++ compiler and libraries installed
 FROM gcc:latest
 
+RUN apt-get update && apt-get install -y git
+RUN git clone https://github.com/vinay-k-swift-nav/HelloUniverse  /app
+
 # Set the working directory inside the container
 WORKDIR /home/hellouniverse
 
