@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y git
 RUN git clone https://github.com/vinay-k-swift-nav/HelloUniverse  /app
 
 # Set the working directory inside the container
-WORKDIR /Home/hellouniverse
+WORKDIR /home/vinay/hellouniverse
 
 # Copy the C++ source code into the container
 COPY . .
