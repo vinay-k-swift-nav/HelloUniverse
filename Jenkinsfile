@@ -5,7 +5,7 @@ pipeline{
     stages{
         stage("git checkout"){
             steps{
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/vinay-k-swift-nav/HelloUniverse']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/bablooswiftnav/HelloUniverse']])
             }
         }
         stage("Run docker image"){
